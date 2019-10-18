@@ -14,9 +14,9 @@
   "author": "Jesse Frush",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/turkycat/node-conway/issues"
+    "url": "https://github.com/turkycat/turkycat.com/issues"
   },
-  "homepage": "https://github.com/turkycat/node-conway#readme",
+  "homepage": "https://github.com/turkycat/turkycat.com#readme",
   "dependencies": {
     "@babel/core": "^7.6.4",
     "@babel/node": "^7.6.3",
@@ -33,6 +33,7 @@
     "babel-eslint": "^10.0.3",
     "eslint": "^6.5.1",
     "eslint-plugin-react": "^7.16.0",
-    "eslint-plugin-react-hooks": "^2.1.2"
+    "eslint-plugin-react-hooks": "^2.1.2",
+    "nodemon": "^1.19.4"
   }
 }
