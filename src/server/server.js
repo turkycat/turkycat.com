@@ -7,6 +7,7 @@ const port = 3000;
 
 const server = express();
 server.use(express.static('dist'));
+server.use(express.static('assets'));
 
 server.get('/', (req, res) => {
   console.dir(req, { depth: 0 });
@@ -15,6 +16,7 @@ server.get('/', (req, res) => {
     <html>
       <head>
         <title>turkycat.com</title>
+        <link rel="stylesheet" type="text/css" href="/styles.css">
       </head>
       <body>
         <div id="app-mount">${initialMarkup}</div>
@@ -23,14 +25,6 @@ server.get('/', (req, res) => {
     </html>
   `)
 });
-
-/*
-server.get('/styles.css', (req, res) => {
-  console.dir(req, { depth: 0 });
-  res.setHeader('Content-Type', 'text/css');
-  res.send(style);
-});
-*/
 
 //listen for request on port 3000, and as a callback function have the port listened on logged
 server.listen(port, () => {
