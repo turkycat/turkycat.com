@@ -102,3 +102,6 @@ public
 
 # Visual Studio
 .vs/
+
+# webpack files
+dist/

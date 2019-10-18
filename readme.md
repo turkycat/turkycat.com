@@ -10,5 +10,10 @@ install node and npm
 git clone https://github.com/turkycat/node-conway.git
 cd node-conway
 npm i
-node server.js
+npm run dev-server
+```
+
+in a separate terminal:
+```
+npm run dev-bundle
 ```
