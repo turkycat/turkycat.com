@@ -7,7 +7,7 @@ const port = 3000;
 
 const server = express();
 server.use(express.static('dist'));
-server.use(express.static('assets'));
+server.use(express.static('css'));
 
 server.get('/', (req, res) => {
   console.dir(req, { depth: 0 });
@@ -16,11 +16,12 @@ server.get('/', (req, res) => {
     <html>
       <head>
         <title>turkycat.com</title>
-        <link rel="stylesheet" type="text/css" href="/styles.css">
+        <link rel="stylesheet" type="text/css" href="/materialize.css">
       </head>
       <body>
         <div id="app-mount">${initialMarkup}</div>
-        <script src="/main.js"></script>
+        <script src="/main.js" ></script
+        <script src="/materialize.js" ></script
       </body>
     </html>
   `)
