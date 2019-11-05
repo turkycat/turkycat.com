@@ -19,7 +19,7 @@ server.get('/', (req, res) => {
         <link rel="stylesheet" type="text/css" href="/materialize.css">
       </head>
       <body>
-        <div id="app-mount">${initialMarkup}</div>
+        <div id="root">${initialMarkup}</div>
         <script src="/main.js" ></script
         <script src="/materialize.js" ></script
       </body>
